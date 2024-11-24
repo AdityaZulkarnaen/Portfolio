@@ -1,0 +1,440 @@
+body {
+    background-color: #1E1E1E;
+    height: 2500px;
+    
+    
+}
+body::-webkit-scrollbar{
+    width: 12px;
+    height: 33%;
+}
+
+body::-webkit-scrollbar-track{
+    background:#1E1E1E;
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #BA7E7E;
+    border-radius: 3px;
+}
+
+.sosmed {
+    display: flex;
+}
+
+.sosmed ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+   
+}
+
+
+
+.sosmed ul li a {
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.sosmed ul li a:hover {
+    transform: translate(0,5px);
+}
+
+.sosmed ul li a img{
+    height: 40px;
+    width: 40px;
+}
+
+.profile {
+    width: 1300px;
+    height: 30%;
+    margin: 100px auto 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.profile-pict {
+    width: 30%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.profile-pict:hover {
+    transform: translate(0, -10px);
+}
+
+.profile-pict  img{
+
+    height: 400px;
+}
+
+.profile-information {
+    min-width: 850px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 40px;
+    
+
+
+}
+
+.profile-desc {
+    height: 50%;
+    width: 75%;
+    background-color: #30343F;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+}
+
+.profile-desc:hover {
+    transform: translate(0, -10px);
+}
+
+.profile-desc .name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-desc .name h1 {
+    font-family: "Raleway", "Anonymous Pro";
+    margin: 30px 0;
+    
+}
+
+.profile-desc .name .hello::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    left: 0;
+    bottom: -8px;
+    width: 400%;
+  }
+
+.profile-desc .name .hello {
+    margin-left: 40px;
+    color: white;
+}
+.profile-desc .name .hello-name {
+    color: #BA7E7E;
+}
+
+.profile-desc p {
+    margin-left: 40px;
+    font-family: "Raleway", 'Poppins';
+    color: rgba(255, 255, 255, 0.68);
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.profile-link {
+    padding-left: 40px;
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.profile-link button {
+    background-color: #BA7E7E;
+    border: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: "Raleway", 'Poppins';
+    font-weight: 500;
+    transition: all 0.5s ease;
+    
+}
+
+.profile-link button:hover {
+    background-color: rgba(255, 217, 218, 1);
+    transform: scale(1.1);
+
+}
+
+.profile-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.add-information {
+    flex: 2;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.add-information .about-me {
+    flex: 2;
+    height: 300px;
+    border-radius: 40px;
+    background-color: #BA7E7E;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 30px 40px;
+}
+
+.about-me h1 {
+    margin-left: 0px;
+    font-family: "Montserrat";
+    color: #1E1E1E;
+    font-size: 3em;
+    
+}
+
+.about-me p {
+    font-family: "Montserrat", 'Poppins';
+    font-weight: 400;
+    font-size: 1.2em;
+    color:rgba(255, 217, 218, 0.822) ;
+    color: #fff;
+}
+
+
+
+.add-information .message-container {
+    flex: 1;
+    height: 300px;
+    background-color:#BA7E7E;
+    border-radius: 40px;
+    padding: 30px 20px;
+
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+
+}
+
+.message-form ul{
+    list-style: none;
+    padding-inline-start: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+textarea {
+    font-family: 'Raleway';
+}
+
+
+
+
+.message-form textarea {
+    border-radius: 20px;
+    padding: 20px 20px;
+    border: none;
+}
+
+.message-form input[type="submit"] {
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    font-family: "Raleway", 'Anonymous Pro';
+    font-weight: bolder;
+
+}
+.message-form input[type="submit"]:hover {
+    background-color: #89023E;
+    color: #fff;
+
+}
+.message-form {
+    text-align: right;
+    width: 100%;
+}
+
+.message-form input[type="submit"]:active {
+    transform: scale(1.02);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.skills{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 350px;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-size: 4em;
+    color: #fff;
+    font-weight: 600;
+}
+
+.skills img{
+    width: 150px;
+    height: 150px;
+    
+    
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    margin: 30px;
+    margin-top: 200px;
+    padding: 0px;
+    
+}
+
+.skills ul li {
+    transition: all 0.5s ease;
+}
+
+.skills ul li:hover{
+    transform: translate(0,-20px);
+}
+
+.projects {
+    height: 500px;
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 350px;
+    flex-direction: row;
+    overflow-x: scroll;
+    font-family: 'Montserrat';
+    color: #fff;
+    gap: 100px;
+    white-space: nowrap;
+    padding: 50px 20px; 
+}
+
+
+.projects::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.projects::-webkit-scrollbar-track{
+    background:#1E1E1E;
+    border-radius: 3px;
+}
+
+.projects::-webkit-scrollbar-thumb{
+    background: #BA7E7E;
+    border-radius: 3px;
+}
+
+.project1, .project2, .project3, .project4 {
+    margin-top: 100px;
+    width: 46%;
+    height: 70%;
+    background-color: #30343F;
+    border-radius: 30pt;
+    flex: 0 0 auto;
+    transition: all 0.3s ease; 
+    transform-origin: center center; 
+    
+}
+
+/* .project1:hover, 
+.project2:hover, 
+.project3:hover, 
+.project4:hover {
+    transform: scale(1.2);
+    z-index: 1; /* Pastikan elemen yang di-hover muncul di atas yang lain 
+} */
+
+
+
+.recent {
+    font-family: 'Montserrat';
+    font-size: 4em;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 150px;
+}
+
+.gforce {
+    height: 80%;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.project1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.gforce a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.gforce img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.p2, .p3, .p4{
+    background-color: grey;
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: 'Montserrat';
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
